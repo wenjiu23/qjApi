@@ -1,0 +1,28 @@
+# 公共配置文件
+server:
+  port: 8090
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - AddResponseHeader=source, yu
+      routes:
+        - id: api_route
+          uri: http://8.130.134.112:8123
+          predicates:
+            - Path=/api/**
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+dubbo:
+  application:
+    name: dubbo-springboot-api-comsumer
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://8.130.134.112:8848
+

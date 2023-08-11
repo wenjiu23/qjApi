@@ -1,0 +1,11 @@
+com\common\model\vo\InvokeInterfaceInfoVO.class
+com\common\model\vo\SelfInterfaceDateVo.class
+com\common\model\entity\InvokeRequest.class
+com\common\service\InnerUserService.class
+com\common\model\entity\InterfaceInfo.class
+com\common\model\entity\User.class
+com\common\model\entity\UserInterfaceInfo.class
+com\common\service\InnerInterfaceInfoService.class
+com\common\model\vo\LoginUserVO.class
+com\common\model\vo\UserVO.class
+com\common\service\InnerUserInterfaceInfoService.class
